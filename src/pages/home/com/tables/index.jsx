@@ -43,9 +43,9 @@ export default @connect(
   }
 )
 class Tables extends Component {
-  add = () =>{
-    this.props.history.push("/home/forms")
-  }
+    add = () =>{
+      this.props.history.push("/home/forms")
+    }
     render() {
       let { list } = this.props
         return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input, Button } from 'antd';
+import { Form , Input , Button } from 'antd';
 import Axios from "axios"
 import qs from "qs"
 
@@ -10,13 +10,13 @@ const layout = {
     wrapperCol: {
       span: 16,
     },
-  };
-  const tailLayout = {
+};
+const tailLayout = {
     wrapperCol: {
       offset: 8,
       span: 16,
     },
-  };
+};
 export default class Forms extends Component {
     onFinish = values => {
         console.log('Success:', values);

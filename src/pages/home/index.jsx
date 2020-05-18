@@ -10,11 +10,12 @@ import Forms from "./com/forms"
 import Lcons from "./com/lcons"
 import Sample from "./com/sample"
 import Tables from "./com/tables"
-import "./style.less"
 import { getData } from "../../action/getAction"
 import Axios from "axios"
+import "./style.less"
 
 const { Header, Content, Sider } = Layout;
+
 
 export default @connect(
     (state) =>{
@@ -31,7 +32,7 @@ class Home extends Component {
         Axios.get('https://api.baxiaobu.com/index.php/home/v5/findUser').then(res=>{
           this.props.getData(res.data.users)
         })
-      }
+    }
     render() {
         let  { loginData } = this.props
         return (

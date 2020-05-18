@@ -1,4 +1,4 @@
-import { createStore, compose, combineReducers, applyMiddleware } from 'redux'
+import { createStore , compose , combineReducers , applyMiddleware } from 'redux'
 import promise from 'redux-promise' // 可以让 action 以异步的方式去写
 import thunk from 'redux-thunk' // action 函数方式写
 import { persistReducer } from 'redux-persist' // 合并 reduce
