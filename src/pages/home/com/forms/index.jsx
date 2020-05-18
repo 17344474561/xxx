@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form , Input , Button } from 'antd';
-import Axios from "axios"
+import { AddData } from "@/api/index"
 import qs from "qs"
 
 const layout = {
@@ -19,8 +19,7 @@ const tailLayout = {
 };
 export default class Forms extends Component {
     onFinish = values => {
-        console.log('Success:', values);
-        Axios.post('https://api.baxiaobu.com/index.php/home/v5/add',qs.stringify(values)).then(res=>{
+        AddData(qs.stringify(values)).then(res=>{
             alert("添加成功")
         })
     }
